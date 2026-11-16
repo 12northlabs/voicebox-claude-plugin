@@ -1,0 +1,11 @@
+{
+  "name": "voicebox-plugins",
+  "owner": { "name": "12northlabs" },
+  "plugins": [
+    {
+      "name": "voicebox",
+      "source": "./",
+      "description": "Text-to-speech and transcription through a self-hosted Voicebox server."
+    }
+  ]
+}

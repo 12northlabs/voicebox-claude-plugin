@@ -1,0 +1,23 @@
+{
+  "name": "voicebox",
+  "version": "1.0.0",
+  "description": "Text-to-speech and transcription through a self-hosted Voicebox server, with a skill that picks the right engine and voice and writes text for it.",
+  "author": { "name": "12northlabs" },
+  "license": "MIT",
+  "keywords": ["tts", "speech", "voice", "transcription", "voicebox", "mcp"],
+  "userConfig": {
+    "voicebox_key": {
+      "type": "string",
+      "title": "Voicebox access key",
+      "description": "The access key for voice.snapcoder.ai, given to you by the server's owner.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "mcpServers": {
+    "voicebox": {
+      "type": "http",
+      "url": "https://voice.snapcoder.ai/mcp?key=${user_config.voicebox_key}"
+    }
+  }
+}
